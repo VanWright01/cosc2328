@@ -6,6 +6,7 @@
   --light-bg: #ffffff;
   --space: 16px;
   --radius: 8px;
+  --accent-color: #5fc1eb;
 }
 
 .box {
@@ -15,6 +16,7 @@
   margin: var(--space) auto;             /* space OUTSIDE; auto centers it */
   background-color: var(--light-bg);
   border-radius: var(--radius);
+  box-shadow: 0 2px 6px #cccccc;
 }
 
 .box h2 {
@@ -28,7 +30,7 @@
 }
 
 .highlight {
-  background-color: #fff3b0;
+  background-color: var(--accent-color);
   padding: 2px 6px;
   border-radius: 4px;
   font-weight: bold;
