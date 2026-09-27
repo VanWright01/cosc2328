@@ -1,0 +1,55 @@
+/* HW4 – COSC 2328 – Professor McCurry
+   Implemented by: Van Wright */
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff4f4f3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #0066cc;
+}
+
+button {
+    background-color: #0066cc;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #004999;
+}
+
+.event-info img {
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        gap: 2rem;
+    }
+}
