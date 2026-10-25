@@ -1,0 +1,40 @@
+/* HW7 – COSC 2328 – Professor McCurry
+   Implemented by: Van Wright */
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+}
+
+.letters {
+  font-size: 0.9em;
+}
+
+#loadingMessage {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 1.5em;
+}
