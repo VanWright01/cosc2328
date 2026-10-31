@@ -1,0 +1,68 @@
+/* HW8 – COSC 2328 – Professor McCurry
+   Implemented by: Van Wright */
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.form input {
+  flex: 1;
+  padding: 8px;
+}
+
+.form select,
+.form button {
+  padding: 8px;
+}
+
+.taskBox {
+  margin-top: 20px;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.low {
+  background-color: green;
+}
+
+.medium {
+  background-color: orange;
+}
+
+.high {
+  background-color: red;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.empty {
+  color: gray;
+  font-style: italic;
+  text-align: center;
+}
