@@ -1,5 +1,5 @@
 // IC1 – COSC 2328 – Professor McCurry
-// Implemented by: [Your Full Name]
+// Implemented by: Van Wright
 require('dotenv').config();                              // NEW — IC19: read .env and load values into process.env
 const express = require("express");                       // load the Express web framework
 const path    = require("path");                          // built-in Node module for working with file paths
@@ -25,6 +25,7 @@ app.get('/ic19/config', (req, res) => {                  // NEW — IC19: GET ro
 });
 
 app.use("/ic20", require("./routes/ic20-routes"));
+app.use('/hw9', require('./routes/hw9-routes'));  // NEW — HW9: mount hw9 router
 app.listen(PORT, "0.0.0.0", () =>                        // 0.0.0.0 makes the server reachable from the droplet (IC2)
   console.log(`Running on http://localhost:${PORT}`)
 );
