@@ -1,6 +1,15 @@
 // IC23 – COSC 2328 – Professor McCurry
 // Implemented by: Van Wright
 
+// fetch() GET uses zero options — the defaults work. What three options does fetch() POST require and why does each one matter?
+// POST because the default is GET, headers with Content-Type application/json so Express parses req.body, and body JSON.stringify() fetch can't send objects
+// Why does the db.run callback use function (err) instead of (err) =>? What would this.lastID be if you used an arrow function?
+// A regular function gets its own this, so this.lastID has new ID with an arrow function it would be undefined
+// What is the re-fetch pattern and why does it keep the UI in sync with the server instead of just appending a new <li> directly?
+// After succesful POST we call loadStudents() again so the list comes from the database, which is source of truth
+// Open the Network tab and look at the GET and POST requests side by side. What is different about the POST in the Headers and Payload tabs that the GET doesn't have?
+// POST has Content-Type application/json request header and Payload tab with JSON body, GET has niether
+
 async function loadStudents() {
     const response = await fetch('/ic23/students');
     const students = await response.json();
